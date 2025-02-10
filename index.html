@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Crafting beautiful and functional websites</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="nik.jpg" alt="My Photo" class="profile-img" />
+      <p>
+        <i>
+          Hello! I'm a passionate web developer who loves creating modern,
+          responsive websites.</i
+        >
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="project1.jpeg" alt="Project 1" />
+          <h3>Project One</h3>
+          <p>A fully responsive landing page.</p>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpeg" alt="Project 2" />
+          <h3>Project Two</h3>
+          <p>A modern business website.</p>
+        </div>
+        <div class="project-card">
+          <img src="project3.png" alt="Project 3" />
+          <h3>Project Three</h3>
+          <p>An interactive e-commerce platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 My Portfolio | Designed by Me</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+
+    background: url('hero2.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e65c00;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background: #444;
+    padding: 15px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* About Section */
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
