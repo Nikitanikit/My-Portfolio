@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nikita-portfolio
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true

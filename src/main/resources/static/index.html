@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="Nikita Sudhakar Bhosale — Full Stack Developer portfolio.">
+  <title>Nikita Sudhakar Bhosale — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.180.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nikita home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-mark-text">NSB</span>
+        <span class="brand-orbit brand-orbit-green"><i></i></span>
+        <span class="brand-orbit brand-orbit-red"><i></i></span>
+      </span><span class="brand-period">.</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-reveal"><span class="status-dot"></span><span id="status-label">FULL STACK DEVELOPER · BUILDING WITH PURPOSE</span></p>
+        <p class="hero-kicker hero-reveal">HELLO, I'M</p>
+        <h1 id="hero-title" class="hero-reveal">NIKITA<br><span>SUDHAKAR</span><br><span class="name-last">BHOSALE<span class="lime-dot">.</span></span></h1>
+        <p class="hero-role hero-reveal">Full Stack Developer <span class="role-divider">/</span> Java &amp; Web</p>
+        <p class="hero-description hero-reveal" id="hero-description">I build thoughtful web experiences with Java, Spring Boot and modern frontend technologies.</p>
+        <div class="hero-actions hero-reveal">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-stack hero-reveal" aria-label="Technologies">
+          <span>JAVA</span><i></i><span>SPRING BOOT</span><i></i><span>JAVASCRIPT</span><i></i><span>SQL</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Abstract interactive 3D sculpture" role="img">
+        <div class="art-grid" aria-hidden="true"></div>
+        <div class="art-glow" aria-hidden="true"></div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="orbit-label orbit-label-top" aria-hidden="true"><span class="mini-dot"></span> CREATIVE ENGINEERING</div>
+        <div class="orbit-label orbit-label-bottom" aria-hidden="true"><span>FIG. 001</span><span>IDEA → EXPERIENCE</span></div>
+        <div class="floating-tag tag-code" aria-hidden="true"><span class="tag-symbol">{ }</span><span><b>Clean code</b><small>Thoughtfully crafted</small></span></div>
+        <div class="floating-tag tag-stack" aria-hidden="true"><span class="tag-symbol">↗</span><span><b>Full stack</b><small>Front to back</small></span></div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span><span>SCROLL TO EXPLORE</span></a>
+      <span class="hero-index" aria-hidden="true">PORTFOLIO / 2026</span>
+    </section>
+
+    <section class="intro-strip section-shell" id="about">
+      <p class="eyebrow section-reveal">01 / A LITTLE ABOUT ME</p>
+      <div class="intro-content section-reveal">
+        <h2>Curiosity in mind.<br><span>Purpose in every build.</span></h2>
+        <p>I enjoy connecting thoughtful interfaces with reliable backend systems. My focus is learning, solving real problems and creating digital experiences that feel as good as they work.</p>
+        <h3>I turn curious ideas into useful experiences.</h3>
+      </div>
+      <div class="about-atmosphere" aria-hidden="true">
+        <div class="about-light"></div>
+        <div class="about-hardware">
+          <div class="hardware-board">
+            <span class="circuit-trace trace-one"></span><span class="circuit-trace trace-two"></span>
+            <span class="circuit-trace trace-three"></span><span class="circuit-trace trace-four"></span>
+            <span class="circuit-trace trace-five"></span>
+            <div class="memory-module module-one"><i></i><i></i><i></i><i></i></div>
+            <div class="memory-module module-two"><i></i><i></i><i></i><i></i></div>
+            <div class="memory-module module-three"><i></i><i></i><i></i><i></i></div>
+            <div class="memory-module module-four"><i></i><i></i><i></i><i></i></div>
+            <div class="memory-chip">
+              <span class="chip-label">MEMORY / 01</span>
+              <span class="chip-core">NSB</span>
+              <span class="chip-status"><i></i> SYSTEM ONLINE</span>
+            </div>
+            <div class="hardware-pixels"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="circuit-node circuit-node-one"></span><span class="circuit-node circuit-node-two"></span>
+            <span class="circuit-node circuit-node-three"></span>
+          </div>
+        </div>
+        <span class="about-caption">MEMORY / IN MOTION</span>
+      </div>
+    </section>
+
+    <section class="skills-section section-shell" id="skills">
+      <div class="section-heading section-reveal">
+        <p class="eyebrow">02 / TECHNICAL ARSENAL</p>
+        <h2>Tools for turning<br><span>ideas into reality.</span></h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card" data-skill="java" tabindex="0">
+          <span class="skill-number">01 <i>LANGUAGE</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-java" aria-hidden="true">
+            <div class="visual-halo"></div><div class="steam steam-one"></div><div class="steam steam-two"></div><div class="steam steam-three"></div>
+            <span class="steam-spark spark-one"></span><span class="steam-spark spark-two"></span>
+            <div class="coffee-cup"><span class="cup-coffee"></span><span class="cup-handle"></span><span class="cup-band"></span></div>
+            <div class="cup-shadow"></div>
+          </div>
+          <h3>Java</h3><p>Reliable, object-oriented foundations.</p>
+        </article>
+        <article class="skill-card" data-skill="html" tabindex="0">
+          <span class="skill-number">02 <i>STRUCTURE</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-html" aria-hidden="true">
+            <div class="visual-halo"></div><span class="html-tag tag-open">&lt;div&gt;</span><span class="html-tag tag-close">&lt;/&gt;</span>
+            <div class="html-shield"><span>&lt;/&gt;</span><i>HTML</i></div>
+            <span class="code-fragment code-one">&lt;main&gt;</span><span class="code-fragment code-two">&lt;/section&gt;</span>
+          </div>
+          <h3>HTML5</h3><p>Accessible structure, built with intent.</p>
+        </article>
+        <article class="skill-card" data-skill="css" tabindex="0">
+          <span class="skill-number">03 <i>PRESENTATION</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-css" aria-hidden="true">
+            <div class="visual-halo"></div><div class="style-stack"><span class="style-layer layer-back"></span><span class="style-layer layer-mid"></span><span class="style-layer layer-front"><i></i><i></i><i></i></span></div>
+            <span class="css-orbit orbit-a"></span><span class="css-orbit orbit-b"></span>
+          </div>
+          <h3>CSS3</h3><p>Responsive layouts and considered detail.</p>
+        </article>
+        <article class="skill-card" data-skill="javascript" tabindex="0">
+          <span class="skill-number">04 <i>INTERACTION</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-js" aria-hidden="true">
+            <div class="visual-halo"></div><div class="js-orbit"><span></span><span></span><span></span><span></span></div>
+            <div class="js-cube"><span>JS</span></div><i class="js-node node-a"></i><i class="js-node node-b"></i><i class="js-node node-c"></i>
+          </div>
+          <h3>JavaScript</h3><p>Dynamic behavior, thoughtful interaction.</p>
+        </article>
+        <article class="skill-card" data-skill="spring" tabindex="0">
+          <span class="skill-number">05 <i>BACKEND</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-spring" aria-hidden="true">
+            <div class="visual-halo"></div><div class="spring-ring ring-one"></div><div class="spring-ring ring-two"></div>
+            <div class="spring-core"><span></span></div><i class="service-node service-a"></i><i class="service-node service-b"></i><i class="service-node service-c"></i><i class="service-node service-d"></i>
+            <span class="service-link link-a"></span><span class="service-link link-b"></span><span class="service-link link-c"></span><span class="service-link link-d"></span>
+          </div>
+          <h3>Spring Boot</h3><p>Scalable services and clean APIs.</p>
+        </article>
+        <article class="skill-card" data-skill="maven" tabindex="0">
+          <span class="skill-number">06 <i>BUILD SYSTEM</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-maven" aria-hidden="true">
+            <div class="visual-halo"></div><div class="build-lines"></div><div class="build-stack"><i class="build-block block-a"></i><i class="build-block block-b"></i><i class="build-block block-c"></i><i class="build-block block-d"></i><span class="build-core">m</span></div>
+          </div>
+          <h3>Maven</h3><p>Dependencies, assembled into one build.</p>
+        </article>
+        <article class="skill-card" data-skill="sql" tabindex="0">
+          <span class="skill-number">07 <i>DATA</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-sql" aria-hidden="true">
+            <div class="visual-halo"></div><div class="database-stack"><span class="db-layer db-top"></span><span class="db-layer db-middle"></span><span class="db-layer db-bottom"></span></div>
+            <i class="data-dot data-a"></i><i class="data-dot data-b"></i><i class="data-dot data-c"></i><span class="query-pulse"></span>
+          </div>
+          <h3>SQL</h3><p>Structured data and meaningful queries.</p>
+        </article>
+        <article class="skill-card" data-skill="github" tabindex="0">
+          <span class="skill-number">08 <i>COLLABORATION</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-github" aria-hidden="true">
+            <div class="visual-halo"></div><div class="contribution-grid">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="branch-line"></span><i class="branch-node branch-a"></i><i class="branch-node branch-b"></i><i class="branch-node branch-c"></i>
+          </div>
+          <h3>GitHub</h3><p>Version control and collaborative delivery.</p>
+        </article>
+        <article class="skill-card" data-skill="docker" tabindex="0">
+          <span class="skill-number">09 <i>CONTAINERS</i></span><span class="skill-mark" aria-hidden="true">↗</span>
+          <div class="skill-visual visual-docker" aria-hidden="true">
+            <div class="visual-halo"></div><div class="container-platform"></div><div class="container-grid">
+              <span class="container-box container-a"></span><span class="container-box container-b"></span><span class="container-box container-c"></span>
+              <span class="container-box container-d"></span><span class="container-box container-e"></span><span class="container-box container-f"></span>
+            </div>
+          </div>
+          <h3>Docker</h3><p>Consistent, isolated application environments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section section-shell" id="projects">
+      <div class="section-heading section-reveal">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Made with intent.<br><span>Built to be useful.</span></h2>
+        <p class="section-note">A closer look at projects built to solve real problems.</p>
+      </div>
+      <div class="project-placeholder section-reveal">
+        <div class="project-window">
+          <div class="window-bar"><span></span><span></span><span></span><p>PAWHOME / PET ADOPTION</p></div>
+          <div class="window-content">
+            <div class="paw-preview-copy">
+              <p class="eyebrow">A BETTER WAY TO FIND YOUR FRIEND</p>
+              <p class="paw-preview-title">A home for<br><span>every paw.</span></p>
+              <span class="paw-preview-link">EXPLORE ADOPTIONS <i aria-hidden="true">↗</i></span>
+            </div>
+            <div class="paw-portrait" aria-hidden="true">
+              <div class="paw-portrait-glow"></div>
+              <svg class="paw-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="50" cy="66" rx="24" ry="18" fill="currentColor"/>
+                <ellipse cx="25" cy="42" rx="10" ry="13" transform="rotate(-24 25 42)" fill="currentColor"/>
+                <ellipse cx="43" cy="30" rx="10" ry="13" transform="rotate(-8 43 30)" fill="currentColor"/>
+                <ellipse cx="62" cy="30" rx="10" ry="13" transform="rotate(8 62 30)" fill="currentColor"/>
+                <ellipse cx="78" cy="43" rx="10" ry="13" transform="rotate(24 78 43)" fill="currentColor"/>
+              </svg>
+              <span class="paw-portrait-index">01 / ADOPT</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-caption">
+          <div class="project-details">
+            <p class="eyebrow">FEATURED PROJECT / 001</p>
+            <h3>PawHome</h3>
+            <p class="project-description">A full-stack pet adoption platform with secure JWT authentication, searchable listings, dynamic SQL filtering, and a responsive frontend.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Java</li><li>Spring Boot</li><li>REST API</li><li>SQL</li><li>Maven</li>
+            </ul>
+          </div>
+          <a class="project-link" href="https://github.com/Nikitanikit/PawHome" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact">
+      <p class="eyebrow section-reveal">04 / LET'S CONNECT</p>
+      <h2 class="section-reveal">Have an idea?<br><span>Let's build it.</span></h2>
+      <p class="contact-copy section-reveal">For questions or collaboration, find me on GitHub.</p>
+      <a class="button button-primary contact-button section-reveal" href="https://github.com/Nikitanikit" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a>
+      <footer class="site-footer"><a class="brand" href="#home">NSB<span>.</span></a><p>DESIGNED WITH INTENT · BUILT WITH CODE</p><a href="#home">BACK TO TOP ↑</a></footer>
+    </section>
+  </main>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
